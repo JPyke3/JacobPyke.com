@@ -6,17 +6,31 @@
   [attr.overlay]="overlay ? '' : null"
 >
   <material-list *deferredContent>
-    <div group class="mat-drawer-spacer"></div>
     <div group>
-      <material-list-item (click)="toHome()" (trigger)="drawer.toggle();">
+      <h3 style="padding-left: 16px;">Jacob Pyke</h3>
+    </div>
+    <div group>
+      <material-list-item (click)="toHome()" (trigger)="drawer.toggle()">
         <material-icon icon="home"></material-icon>Home
       </material-list-item>
-      <material-list-item (click)="toResume()" (trigger)="drawer.toggle();">
+      <material-list-item (click)="toResume()" (trigger)="drawer.toggle()">
         <material-icon icon="description"></material-icon>Resume
       </material-list-item>
-      <material-list-item (click)="toRepos()" (trigger)="drawer.toggle();">
+      <material-list-item (click)="toRepos()" (trigger)="drawer.toggle()">
         <material-icon icon="developer_board"></material-icon>Repos
       </material-list-item>
+    </div>
+    <div group>
+      <h3 style="padding-left: 16px;">Socials</h3>
+      <a href="https://www.linkedin.com/in/pykejacob/"
+        ><material-list-item>LinkedIn</material-list-item></a
+      >
+      <a href="https://github.com/JPyke3/"
+        ><material-list-item>GitHub</material-list-item></a
+      >
+      <a href="https://twitter.com/TheRealPykee"
+        ><material-list-item>Twitter</material-list-item></a
+      >
     </div>
   </material-list>
 </material-drawer>
@@ -40,35 +54,27 @@
       <div class="material-spacer"></div>
     </div>
   </header>
-  <div *ngIf="currentpage == PageSelection.home">
-    <home></home>
-  </div>
-  <div *ngIf="currentpage == PageSelection.resume">
-    <p>Resume</p>
-  </div>
-  <div *ngIf="currentpage == PageSelection.repos">
-    <p>Repos</p>
+  <div class="content">
+    <div *ngIf="currentpage == PageSelection.home">
+      <home class="home"></home>
+    </div>
+    <div *ngIf="currentpage == PageSelection.resume">
+      <p>Resume</p>
+    </div>
+    <div *ngIf="currentpage == PageSelection.repos">
+      <p>Repos</p>
+    </div>
   </div>
   <header class="material-header">
     <div class="material-header-row">
       <p style="color: black;">© Jacob Pyke 2019</p>
       <div class="material-spacer"></div>
       <p style="color: black;">
-        Built with
+        Built with 💙 &
         <a href="https://www.dartlang.org/"
-          ><img src="/assets/1080.png" height="20" alt="dart"
+          ><img src="/assets/1080.png" height="16" alt="dart"
         /></a>
       </p>
-      <div class="material-spacer"></div>
-      <nav class="material-navigation">
-        <a href="https://www.linkedin.com/in/pykejacob/">LinkedIn</a>
-      </nav>
-      <nav class="material-navigation">
-        <a href="https://github.com/JPyke3/">GitHub</a>
-      </nav>
-      <nav class="material-navigation">
-        <a href="https://twitter.com/TheRealPykee">Twitter</a>
-      </nav>
     </div>
   </header>
 </div>

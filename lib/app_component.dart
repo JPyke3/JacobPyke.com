@@ -32,6 +32,9 @@ enum PageSelection {home, resume, repos}
   exports: const [PageSelection]
 )
 class AppComponent {
+
+
+
   bool customWidth = false;
   bool end = false;
   bool overlay = true;
