@@ -1,3 +1,29 @@
-<h1>My First AngularDart App</h1>
-
-<home></home>
+<header class="material-header">
+  <div class="material-header-row">
+    <img
+      class="logo"
+      src="/assets/jacobpykelogofinaltext.png"
+      alt=""
+      height="35"
+    />
+    <div class="material-spacer"></div>
+    <nav class="material-navigation">
+      <a>Home</a>
+    </nav>
+    <nav class="material-navigation">
+      <a>Resume</a>
+    </nav>
+    <nav class="material-navigation">
+      <a>Repos</a>
+    </nav>
+  </div>
+</header>
+<div *ngIf="currentpage == PageSelection.home">
+  <home></home>
+</div>
+<div *ngIf="currentpage == PageSelection.resume">
+  <p>Resume</p>
+</div>
+<div *ngIf="currentpage == PageSelection.repos">
+  <p>Repos</p>
+</div>

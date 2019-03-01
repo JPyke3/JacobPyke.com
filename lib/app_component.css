@@ -1,3 +1,20 @@
 :host {
     /* This is equivalent of the 'body' selector of a page. */
 }
+
+.material-header {
+    background-color: white;
+    border-bottom: 1px, black;
+}
+
+.material-drawer-button {
+    color: black;
+}
+
+.material-navigation {
+    color: black;
+}
+
+.logo {
+    padding-left: 24;
+}
