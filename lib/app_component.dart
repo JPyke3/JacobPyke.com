@@ -1,7 +1,11 @@
 import 'package:angular/angular.dart';
-import 'package:jacobpyke/src/components/home/home_component.dart';
 import 'package:angular_components/app_layout/material_persistent_drawer.dart';
+import 'package:angular_components/app_layout/material_temporary_drawer.dart';
 import 'package:angular_components/content/deferred_content.dart';
+import 'package:angular_components/material_list/material_list.dart';
+import 'package:angular_components/material_list/material_list_item.dart';
+import 'package:angular_components/material_toggle/material_toggle.dart';
+import 'package:jacobpyke/src/components/home/home_component.dart';
 import 'package:angular_components/material_button/material_button.dart';
 import 'package:angular_components/material_icon/material_icon.dart';
 // AngularDart info: https://webdev.dartlang.org/angular
@@ -17,14 +21,31 @@ enum PageSelection {home, resume, repos}
     DeferredContentDirective,
     MaterialButtonComponent,
     MaterialPersistentDrawerDirective,
+    MaterialTemporaryDrawerComponent,
     MaterialIconComponent,
-    MaterialPersistentDrawerDirective,
+    MaterialListComponent,
+    MaterialListItemComponent,
+    MaterialToggleComponent,
     NgIf,
     HomeComponent
   ],
   exports: const [PageSelection]
 )
-class AppComponent { 
-  PageSelection currentpage = PageSelection.home;
+class AppComponent {
+  bool customWidth = false;
+  bool end = false;
+  bool overlay = true;
+  PageSelection currentpage =PageSelection.home;
 
+  void toHome() {
+    currentpage =PageSelection.home;
+  }
+
+  void toResume() {
+    currentpage =PageSelection.resume;
+  }
+
+  void toRepos() {
+    currentpage =PageSelection.repos;
+  }
 }
