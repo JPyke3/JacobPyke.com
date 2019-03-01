@@ -7,9 +7,9 @@
 >
   <material-list *deferredContent>
     <div group>
-      <h3 style="padding-left: 16px;">Jacob Pyke</h3>
-    </div>
-    <div group>
+      <header class="material-header shadow">
+        <h3 style="padding-left: 16px; color: black;">Jacob Pyke</h3>
+      </header>
       <material-list-item (click)="toHome()" (trigger)="drawer.toggle()">
         <material-icon icon="home"></material-icon>Home
       </material-list-item>
@@ -35,7 +35,7 @@
   </material-list>
 </material-drawer>
 <div class="material-content">
-  <header class="material-header" shadow>
+  <header class="material-header shadow">
     <div class="material-header-row">
       <material-button
         icon
