@@ -17,10 +17,11 @@
 .logo {
   padding-left: 24;
 }
-
-.content {
-  padding-left: 64px;
-  padding-right: 64px;
+@media screen and (min-width: 800px) {
+  .content {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
 }
 
 a {
