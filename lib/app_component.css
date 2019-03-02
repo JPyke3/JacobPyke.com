@@ -1,28 +1,28 @@
 :host {
-    /* This is equivalent of the 'body' selector of a page. */
+  /* This is equivalent of the 'body' selector of a page. */
 }
 
 .material-header {
-    background-color: #f9f9f9;
+  background-color: #f9f9f9;
 }
 
 .material-drawer-button {
-    color: black;
+  color: black;
 }
 
 .material-navigation {
-    color: black;
+  color: black;
 }
 
 .logo {
-    padding-left: 24;
+  padding-left: 24;
 }
 
 .content {
-    padding-left: 16px;
-    padding-right: 16px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }

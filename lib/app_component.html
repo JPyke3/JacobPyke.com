@@ -7,9 +7,9 @@
 >
   <material-list *deferredContent>
     <div group>
-      <header class="material-header shadow">
+      <div group>
         <h3 style="padding-left: 16px; color: black;">Jacob Pyke</h3>
-      </header>
+      </div>
       <material-list-item (click)="toHome()" (trigger)="drawer.toggle()">
         <material-icon icon="home"></material-icon>Home
       </material-list-item>
@@ -44,7 +44,6 @@
       >
         <material-icon icon="menu"></material-icon>
       </material-button>
-      <div class="material-spacer"></div>
       <img
         class="logo"
         src="/assets/jacobpykelogofinaltext.png"
@@ -62,7 +61,7 @@
       <p>Resume</p>
     </div>
     <div *ngIf="currentpage == PageSelection.repos">
-      <p>Repos</p>
+      <repo></repo>
     </div>
   </div>
   <header class="material-header">

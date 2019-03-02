@@ -8,8 +8,7 @@ import 'package:angular_components/material_toggle/material_toggle.dart';
 import 'package:jacobpyke/src/components/home/home_component.dart';
 import 'package:angular_components/material_button/material_button.dart';
 import 'package:angular_components/material_icon/material_icon.dart';
-// AngularDart info: https://webdev.dartlang.org/angular
-// Components info: https://webdev.dartlang.org/components
+import 'package:jacobpyke/src/components/repos/repo_component.dart';
 
 enum PageSelection {home, resume, repos}
 
@@ -27,7 +26,8 @@ enum PageSelection {home, resume, repos}
     MaterialListItemComponent,
     MaterialToggleComponent,
     NgIf,
-    HomeComponent
+    HomeComponent,
+    RepoComponent
   ],
   exports: const [PageSelection]
 )
