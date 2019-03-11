@@ -1,7 +1,6 @@
 <div *ngFor="let i of repos" style="padding-bottom: 16px;" >
     <h1>{{i.projName}}</h1>
-    <h3>{{i.projPlatform}}</h3>
+    <h3>Programming Language: {{i.projPlatform}}</h3>
     <p style="font-size: 16px">{{i.projDesc}}</p>
     <a style="font-style: none;" href="{{i.projURL}}"><material-button raised style="background-color: red; color: white;"><b>Project Repository</b></material-button></a>
-    <p style="font-size: 11px;">This repository is licenced under the {{i.projLicence}}</p>
 </div>
